@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feri - Portofolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header & Navigasi -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Feri Ahmad Ba'san<span>.</span></a>
+            
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Beranda</a></li>
+                <li><a href="#about" class="nav-link">Tentang Saya</a></li>
+                <li><a href="#projects" class="nav-link">Proyek</a></li>
+                <li><a href="#skills" class="nav-link">Keahlian</a></li>
+                <li><a href="#contact" class="nav-link">Kontak</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <!-- Tombol Dark Mode -->
+                <button id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <!-- Hamburger Menu HP -->
+                <div class="hamburger" id="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+   <!-- Hero Section Style Referensi -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            
+            <!-- Foto Profil di Kiri (Tanpa Lingkaran / Potong Badan) -->
+            <div class="hero-img">
+                <img src="images/foto-about.png" alt="Foto Profil Saya">
+            </div>
+
+            <!-- Teks Deskripsi di Kanan -->
+            <div class="hero-content">
+                <!-- Sub-judul Kecil (Opsional) -->
+                <span class="sub-title">SOLUSI KREATIF & DIGITAL TERPADU</span>
+                
+                <!-- Baris Pertama: Nama -->
+                <h1 class="hero-title">Halo, saya Feri bukan Irwandi</h1>
+                
+                <!-- Baris Kedua: Typing Text di Bawahnya -->
+                <h2 class="hero-subtitle">Saya seorang <span class="typing-text">Frontend Designer</span></h2>
+                
+                <!-- Deskripsi Paragraf -->
+                <p class="hero-desc">
+                    Selamat datang di portofolio pribadi saya, Saya mempunyai minat pada desain visual, penyuntingan video, UI/UX, dan strategi pemasaran konten. Saya siap membantu membangun identitas brand Anda menjadi lebih menarik dan berdampak.
+                </p>
+
+                <!-- Tombol -->
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-blue">Hubungi</a>
+                    <a href="assets/cv-anda.pdf" download="CV_Feri_Ahmad_Basan.pdf" class="btn btn-outline">
+                        <i class="fa-solid fa-download"></i> Download CV
+                    </a>
+                </div>
+
+                <!-- Ikon Sosial Media -->
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/feri-ahmad-basan-240a473b8/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/feriabsan/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ELEMEN ANIMASI PESAWAT (Kanan ke Kiri) -->
+        <div class="airplane-animation">
+            <i class="fa-solid fa-plane"></i>
+        </div>
+
+        <!-- ELEMEN ANIMASI MOBIL (Kiri ke Kanan) -->
+        <div class="car-animation">
+            <i class="fa-solid fa-car-side"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-shape shape-1"><i class="fa-solid fa-code"></i></div>
+        <div class="about-shape shape-2"><i class="fa-solid fa-paintbrush"></i></div>
+        <h2 class="section-title">Tentang <span>Saya</span></h2>
+        <div class="about-container">
+            <!-- Foto Tentang Saya -->
+            <div class="about-img">
+                <img src="images/foto-hero.jpg" alt="Foto Tentang Saya">
+            </div>
+
+            <!-- Teks Deskripsi -->
+            <div class="about-text">
+                <p>Lulusan D3 Teknik Informatika dengan 4 tahun pengalaman sebagai Freelance Video Editor. Mengombinasikan keahlian teknis IT dengan kreativitas visual untuk menghasilkan konten menarik, mulai dari narasi hingga potongan klip viral. Saat ini memperdalam strategi digital melalui magang Humas Marketing yang berfokus pada content creation dan social media editing.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: PROYEK TERBARU -->
+    <section id="projects" class="section gray-bg">
+        <h2 class="section-title">Proyek <span>Terbaru</span></h2>
+
+        <!-- Filter Tab Kategori Proyek -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Semua</button>
+            <button class="filter-btn" data-filter="video">Video Editing</button>
+            <button class="filter-btn" data-filter="poster">Desain Poster</button>
+            <button class="filter-btn" data-filter="website">Website</button>
+        </div>
+
+        <!-- Grid Kartu Portofolio -->
+        <div class="projects-grid">
+            
+            <!-- Proyek 1: Video Editing -->
+            <div class="project-card" data-category="video">
+                <div class="project-img">
+                    <img src="images/porto1.png" alt="Konten Video">
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">Video Editing</span>
+                    <h3>Video Konten Freelance</h3>
+                    <p>Penyuntingan video durasi panjang (long-form) untuk konten edukasi di kanal YouTube Ilmuwan Top menggunakan Adobe Premiere Pro. Berhasil menembus 3,3+ juta penonton melalui penyampaian alur visual dan storytelling yang menarik.</p>
+                    <a href="https://youtu.be/hxX4ojB6PYg?si=dlME4YzN0r_H2iZJ" target="_blank" class="btn-link">Lihat Video <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <!-- Proyek 2: Personal Project -->
+            <div class="project-card" data-category="video">
+                <div class="project-img">
+                    <img src="images/porto2.png" alt="Konten Video">
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">Personal Project</span>
+                    <h3>Social Media Content</h3>
+                    <p>Inisiatif pribadi dalam membangun konten di mana saya menggabungkan minat olahraga dengan keahlian video editing. Saya mengoptimalkan penggunaan AI Voice-over dan teknik clipping untuk menciptakan konten yang informatif dan viral di platform YouTube dan TikTok.</p>
+                    <a href="https://www.tiktok.com/@maestro90id?is_from_webapp=1&sender_device=pc" target="_blank" class="btn-link">Lihat Video <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <!-- Proyek 3: Humas Marketing -->
+            <div class="project-card" data-category="video">
+                <div class="project-img">
+                    <img src="images/porto3.png" alt="Konten RS Panti Waluyo">
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">Humas Marketing • Sosial Media</span>
+                    <h3>Konten Digital RS Panti Waluyo - Magang</h3>
+                    <p>Perancangan dan pembuatan konten media sosial untuk RS Panti Waluyo. Mengintegrasikan peran Content Creator, Video Editor, dan Graphic Designer untuk menghasilkan visual edukasi kesehatan yang menarik dan informatif.</p>
+                    <a href="https://www.instagram.com/reel/DdqJL1pv4ZB/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==" target="_blank" class="btn-link">Lihat Konten <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <!-- Proyek 4: Website -->
+            <div class="project-card" data-category="website">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=500&auto=format&fit=crop" alt="Proyek Web">
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">Web Development</span>
+                    <h3>Pengembangan Website Absensi & Penggajian — Studio Youtube Ilmuwan Top</h3>
+                    <p>Mengembangkan platform web manajemen internal untuk studio kanal YouTube Ilmuwan Top guna mengelola data kehadiran dan rekapitulasi penggajian tim. Website ini mengintegrasikan fitur pencatatan absensi harian, kalkulasi gaji otomatis, serta pembuatan laporan terstruktur untuk meningkatkan efisiensi operasional studio.</p>
+                    <a href="#" class="btn-link">Lihat Website <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION: KEAHLIAN SAYA -->
+    <section id="skills" class="section">
+        <h2 class="section-title">Keahlian <span>Saya</span></h2>
+        
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fa-solid fa-film"></i></div>
+                <h3>Video Editing</h3>
+                <p>Adobe Premiere Pro & CapCut</p>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fa-solid fa-palette"></i></div>
+                <h3>Desain Grafis</h3>
+                <p>Canva</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+                <h3>Web Development</h3>
+                <p>HTML5, CSS3, JavaScript</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                <h3>Humas & Marketing</h3>
+                <p>Content Strategy & Social Media</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section gray-bg">
+        <h2 class="section-title">Hubungi <span>Saya</span></h2>
+        
+        <form id="contact-form" class="contact-form">
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Nama Anda" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Email Anda" required>
+            </div>
+            <div class="form-group">
+                <textarea id="message" rows="5" placeholder="Pesan Anda" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-blue">
+                <i class="fa-brands fa-whatsapp"></i> Kirim via WhatsApp
+            </button>
+        </form>
+
+        <!-- Pilihan Kontak Langsung (Opsional) -->
+        <div class="contact-direct">
+            <p>Atau hubungi saya secara langsung melalui:</p>
+            <div class="contact-buttons">
+                <a href="https://wa.me/6285866980352" target="_blank" class="btn-direct wa">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="mailto:feriahmadbasan08@gmail.com" class="btn-direct email">
+                    <i class="fa-solid fa-envelope"></i> Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Feri. Seluruh hak cipta dilindungi.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
